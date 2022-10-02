@@ -1,29 +1,4 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Prashant2091 
-ai-mayurpatil
-/
-lungcan
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-lungcan/app.py /
-@ai-mayurpatil
-ai-mayurpatil Update app.py
-Latest commit 278c191 23 hours ago
- History
- 1 contributor
-99 lines (81 sloc)  3 KB
+
 
 import numpy as np
 import streamlit as st
@@ -124,17 +99,3 @@ if uploaded_file is not None:
 
  #if __name__ == "__main__":
   #   main()                
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
