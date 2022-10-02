@@ -3,4 +3,6 @@ numpy==1.20.3
 streamlit==1.13.0
 tensorflow==2.10.0
 Werkzeug==2.0.2
-opencv-contrib-python==3.4.0.12
+opencv-python-headless
+
+
