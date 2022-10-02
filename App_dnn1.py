@@ -13,7 +13,8 @@ st.set_page_config(
 )
 
 #title
-st.title('Lung Cancer Detection')
+st.title('Application of Deep Learning Models for Lung Cancer Type Detection')
+
 st.sidebar.success("Select a page above")
 
 #header
@@ -60,11 +61,21 @@ if uploaded_file is not None:
         else:
             st.error("LUSC")
         st.write(preds)   
-    
+data = {"Name" : ["Prashant Shukla"],
+"Email":["prashantjack.shukla@gmail.com"]}
+df = pd.DataFrame(data,index = np.arange(1,2))
+
+sidebar = st.sidebar.selectbox("Lung Cancer Detection",["","Developers","Guide"])
+
+if sidebar == "Developers":
+    st.image("developer.jpg")
+    st.table(df)
+
+elif sidebar == "Guide":
+    st.header("Self")
     
         
-        # st.success("Predicted Label for the image is {}".format(map_dict [prediction]))
-
+        
 # def main():
 #     file_uploaded = st.file.uploader("Choose the file", type=['jpg','png','jpeg'])
 #     if file_uploaded is not None:
