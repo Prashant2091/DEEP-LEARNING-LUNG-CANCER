@@ -36,7 +36,19 @@ uploaded_file = st.file_uploader("Choose a image file", type=['jpg','png','jpeg'
 #             }
 
     
+data = {"Name" : ["Prashant Shukla","Lalit Bhaskar Mahale"],
+"Email ":["prashantjack.shukla@gmail.com","lalitmahale121@gmail.com"]}
+df = pd.DataFrame(data,index = np.arange(1,3))
 
+sidebar = st.sidebar.selectbox("Lung Cancer Detection",["","Developers","Guide"])
+
+if sidebar == "Developers":
+    st.image("developer.jpg")
+    st.table(df)
+
+elif sidebar == "Guide":
+    st.header("Self")
+    
 if uploaded_file is not None:
     # Convert the file to an opencv image.
     file_bytes = np.asarray(bytearray(uploaded_file.read()), dtype=np.uint8)
