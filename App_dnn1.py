@@ -61,18 +61,18 @@ if uploaded_file is not None:
         else:
             st.error("LUSC")
         st.write(preds)   
-data = {"Name" : "Prashant Shukla",
-"Email":"prashantjack.shukla@gmail.com"}
-df = pd.DataFrame(data,index = np.arange(1,2))
+#data = {"Name" : "Prashant Shukla",
+#"Email":"prashantjack.shukla@gmail.com"}
+#df = pd.DataFrame(data,index = np.arange(1,2))
 
-sidebar = st.sidebar.selectbox("Lung Cancer Detection",["","Developers","Guide"])
+#sidebar = st.sidebar.selectbox("Lung Cancer Detection",["","Developers","Guide"])
 
-if sidebar == "Developers":
-    st.image("developer.jpg")
-    st.table(df)
+#if sidebar == "Developers":
+  #  st.image("developer.jpg")
+ #   st.table(df)
 
-elif sidebar == "Guide":
-    st.header("Self")
+#elif sidebar == "Guide":
+   # st.header("Self")
     
         
         
